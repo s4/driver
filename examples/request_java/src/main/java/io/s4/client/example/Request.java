@@ -98,7 +98,7 @@ public class Request {
             
             // read all responses
             while (true) {
-                Message response = d.recv();
+                Message response = d.recv(10000);
                 System.out.println(response);
             }
             /*List<Message> responses = d.recvAll(999999999);
